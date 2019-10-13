@@ -8,8 +8,8 @@
   <!-- Check out more components here: http://getbootstrap.com/components/ -->
   <div class="page-header">
 
-  
-    <h1>Encrypt the database</h1>
+    <% include ../helpers/navbar %>
+    <h1>Welcome!</h1>
   </div>
 
   <p>Click on the button for a surprise.</p>
@@ -17,7 +17,31 @@
   <button onClick="showPicture()" class="btn btn-dark">Click me</button>
 
   <div id="image"></div>
+
+  <input class = "search" type = "text" placeholder="Enter City Name">
+  <button type= "button" onClick = "searchWeather()">Search</button>
+  <div class = "error-message"></div>
+
+  <div class = "city">
+
+  </div>
+
+  <div class = "temp">
+    
+  </div>
+
+  <button onClick="handleSignIn()">Login</button>
+
+  <form onSubmit="handleMessageFormSubmit()" action="#">
+    Title:<br>
+    <input id="post-title"><br>
+    Body:<br>
+    <textarea id="post-body"></textarea><br>
+    <button>Submit</button>
+  </form>
   
+  <div id="post-listing"></div>
+
 </body>
 
 </html>
