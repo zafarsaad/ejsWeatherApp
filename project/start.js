@@ -23,6 +23,5 @@ app.listen(app.get('port'), function() {
   console.log('Node app is running on port', app.get('port'));
 });
 
-
 // This file is what handles incoming requests and
 // serves files to the browser, or executes server-side code
